@@ -18,6 +18,6 @@ from django.urls import re_path,include
 
 urlpatterns = [
     re_path(r'^admin/', admin.site.urls),
-    re_path(r'^blog/', include('blog.urls')),
+    re_path(r'^blog/', include('blog.urls', namespace='blog')),
     re_path(r'^blog2/', include('blog2.urls')),
 ]
